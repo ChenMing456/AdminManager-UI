@@ -9,7 +9,7 @@ module.exports = function(grunt) {
     gtx.config(gruntConfig);
 
     // We need our bower components in order to develop
-    gtx.alias('build:appstore', ['jshint:appstore', 'recess:less', 'clean:appstore', 'copy:appstore', 'recess:appstore', 'concat:appstore', 'uglify:appstore']);
+    gtx.alias('build:appstore', ['jshint:appstore', 'recess:less', 'clean:appstore', 'copy:appstore', 'recess:appstore', 'concat:appstore', 'uglify:appstore', 'filerev','usemin']);
     gtx.alias('build:html', ['clean:html', 'copy:html', 'recess:html', 'swig:html', 'concat:html', 'uglify:html']);
     gtx.alias('build:landing', ['copy:landing', 'swig:landing']);
 
